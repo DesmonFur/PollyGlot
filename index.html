@@ -5,7 +5,6 @@
   </head>
   <body>
     <!-- Your HTML here -->
-    <script src="index.js" type="module"></script>
 
     <header>
       <div class="header-content">
@@ -18,7 +17,7 @@
     </header>
 
     <main>
-      <div class="main-content">
+      <div class="main-content" id="main-content">
         <h2 id="text-to-translate" class="text-to-translate">
           Text to translate
         </h2>
@@ -27,26 +26,30 @@
           id="text-to-translate-textarea"
           placeholder="Enter text to translate"
         ></textarea>
-        <p class="select-language">Select language</p>
-        <div class="language-select">
+        <p class="select-language" id="select-language">Select language</p>
+        <div class="language-select" id="language-select">
           <div class="language-select-item">
-            <input type="checkbox" name="language" id="french" />
+            <input type="checkbox" name="language" id="french" value="fr" />
             <label for="french">French </label>
             <img src="assets/fr-flag.png" alt="French flag" />
           </div>
           <div class="language-select-item">
-            <input type="checkbox" name="language" id="spanish" />
+            <input type="checkbox" name="language" id="spanish" value="es" />
             <label for="spanish">Spanish </label>
             <img src="assets/sp-flag.png" alt="Spanish flag" />
           </div>
           <div class="language-select-item">
-            <input type="checkbox" name="language" id="japanese" />
+            <input type="checkbox" name="language" id="japanese" value="ja" />
             <label for="japanese">Japanese </label>
             <img src="assets/jpn-flag.png" alt="Japanese flag" />
           </div>
         </div>
+        <!-- <div class="translation-container"> -->
+
+        <!-- </div> -->
         <button id="translate-button" class="action-button">Translate</button>
       </div>
     </main>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

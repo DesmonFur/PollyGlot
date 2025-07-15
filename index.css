@@ -73,10 +73,22 @@ header {
   text-align: center;
 }
 
-/* Add styles for textareas and other form elements to scale properly */
-.main-content textarea {
+/* Style all textareas consistently */
+textarea {
   min-height: 200px;
   resize: vertical;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #035a9d;
+  box-shadow: 0 0 5px rgba(3, 90, 157, 0.3);
 }
 
 .language-select {
