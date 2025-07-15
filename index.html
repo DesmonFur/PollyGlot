@@ -18,7 +18,35 @@
     </header>
 
     <main>
-      <h2>Welcome to my website</h2>
+      <div class="main-content">
+        <h2 id="text-to-translate" class="text-to-translate">
+          Text to translate
+        </h2>
+        <textarea
+          name=""
+          id="text-to-translate-textarea"
+          placeholder="Enter text to translate"
+        ></textarea>
+        <p class="select-language">Select language</p>
+        <div class="language-select">
+          <div class="language-select-item">
+            <input type="checkbox" name="language" id="french" />
+            <label for="french">French </label>
+            <img src="assets/fr-flag.png" alt="French flag" />
+          </div>
+          <div class="language-select-item">
+            <input type="checkbox" name="language" id="spanish" />
+            <label for="spanish">Spanish </label>
+            <img src="assets/sp-flag.png" alt="Spanish flag" />
+          </div>
+          <div class="language-select-item">
+            <input type="checkbox" name="language" id="japanese" />
+            <label for="japanese">Japanese </label>
+            <img src="assets/jpn-flag.png" alt="Japanese flag" />
+          </div>
+        </div>
+        <button id="translate-button" class="action-button">Translate</button>
+      </div>
     </main>
   </body>
 </html>

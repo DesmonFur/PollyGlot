@@ -51,3 +51,171 @@ header {
 .header-text h1 {
   color: #32cd32;
 }
+
+.main-content {
+  width: clamp(300px, 80%, 800px);
+  height: 80vh;
+  margin: 30px auto;
+  border: 5px solid #252f42;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #dad5d5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text-to-translate,
+.select-language {
+  font-size: 20px;
+  font-weight: bold;
+  color: #035a9d;
+  text-align: center;
+}
+
+/* Add styles for textareas and other form elements to scale properly */
+.main-content textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+.language-select {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+  margin-left: 30%;
+}
+
+.language-select-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.action-button {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #035a9d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style for selected language */
+.language-select-item.selected {
+  background-color: #e3f2fd;
+  border: 2px solid #035a9d;
+  border-radius: 8px;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.language-select-item {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.language-select-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 768px) {
+  .main-content {
+    width: 95%;
+    height: 85vh;
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .text-to-translate,
+  .select-language {
+    font-size: 24px;
+  }
+
+  .main-content textarea {
+    min-height: 150px;
+    font-size: 16px;
+  }
+
+  .language-select {
+    width: 100%;
+    margin-left: 0;
+    gap: 15px;
+  }
+
+  .language-select-item {
+    gap: 15px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .action-button {
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  /* Make header content more mobile-friendly */
+  .header-content {
+    gap: 10px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 480px) {
+  .main-content {
+    width: 98%;
+    height: 90vh;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .text-to-translate,
+  .select-language {
+    font-size: 20px;
+  }
+
+  .main-content textarea {
+    min-height: 120px;
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .action-button {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
